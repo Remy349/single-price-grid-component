@@ -15,5 +15,112 @@ $Grayish-Blue: hsl(218, 22%, 67%);
 
 body {
   font-family: 'Karla', sans-serif;
+  background-color: $Light-Gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.single {
+  max-width: 375px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+
+  &__one {
+    background-color: #fff;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    padding: 2rem 1.5rem;
+    text-align: left;
+
+    &-title {
+      color: $Cyan;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &-text {
+      color: $Bright-Yellow;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &-desc {
+      font-size: 1rem;
+      color: $Grayish-Blue;
+      line-height: 1.5;
+    }
+  }
+
+  &__prices {
+    background-color: $Cyan;
+    padding: 2rem 1.5rem;
+    color: #fff;
+    text-align: left;
+
+    &-title {
+      font-size: 1.15rem;
+      margin-bottom: 1rem;
+    }
+
+    &-price {
+      margin-bottom: 2rem;
+
+      & div {
+        font-weight: 700;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+        margin-bottom: .5rem;
+      }
+
+      & span {
+        font-weight: 400;
+        color: $Light-Gray;
+        font-size: 1rem;
+      }
+    }
+
+    &-signup {
+      background-color: $Bright-Yellow;
+      text-decoration: none;
+      cursor: pointer;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: .5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,.2);
+      padding: 1rem 0;
+    }
+  }
+
+  &__why {
+    background-color: hsl(179, 62%, 55%);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    padding: 2rem 1.5rem;
+    text-align: left;
+
+    &-title {
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    &-desc {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $Light-Gray;
+    }
+  }
 }
 
