@@ -29,6 +29,7 @@ body {
   margin-top: 4rem;
   margin-bottom: 4rem;
   box-shadow: 0 4px 20px rgba(0,0,0,.2);
+  border-radius: .5rem;
 
   &__one {
     background-color: #fff;
@@ -120,6 +121,32 @@ body {
       font-size: 1rem;
       line-height: 1.5;
       color: $Light-Gray;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .single {
+    margin: 0;
+    max-width: 650px;
+
+    &__one {
+      padding: 2rem 2.5rem;
+    }
+
+    &__two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__prices {
+      border-bottom-left-radius: .5rem;
+      padding: 2rem 2.5rem;
+    }
+
+    &__why {
+      border-bottom-left-radius: 0;
+      padding: 2rem 2.5rem;
     }
   }
 }
